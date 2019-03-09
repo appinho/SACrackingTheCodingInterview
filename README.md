@@ -20,6 +20,12 @@ Implemented as an array of linked lists (for collision handling) and a hash code
 
 ### 2 Linked Lists
 
+### 3a Stacks
+
+### 3b Queues
+
 Other sources:
 * [Templates](http://www.cplusplus.com/doc/oldtutorial/templates/)
 * [Unknown Array Size](https://stackoverflow.com/questions/22432755/how-to-initialize-an-array-whose-size-is-initially-unknown)
+
+## Algorithm
