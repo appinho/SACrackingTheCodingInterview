@@ -5,7 +5,7 @@ C++ Solutions of "Cracking The Coding Interview" questions
 
 ### 1a Hash Tables
 
-![alt text](./docs/hash_table.png)
+![alt text](./doc/hash_table.png)
 
 A hash table is a data structure that maps keys to values for highly efficient lookup.  
 Implemented as an array of linked lists (for collision handling) and a hash code function ('key % buffer_size')
