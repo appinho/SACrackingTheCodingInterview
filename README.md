@@ -12,8 +12,9 @@ C++ Solutions of "Cracking The Coding Interview" questions
 Definition: A hash table is a data structure that maps keys to values for highly efficient lookup . 
 Implementation: As an array of linked lists (for collision handling) + hash code function (`key % buffer_size`) to determine position in array . 
 Usage: Quick access O(1) . 
-* [Templates](http://www.cplusplus.com/doc/oldtutorial/templates/)
-* [Template based Hashtable solution](https://medium.com/@aozturk/simple-hash-map-hash-table-implementation-in-c-931965904250)
+* [Templates](http://www.cplusplus.com/doc/oldtutorial/templates/) . 
+* [Template based Hashtable solution](https://medium.com/@aozturk/simple-hash-map-hash-table-implementation-in-c-931965904250) . 
+* [Header guards](http://forums.devshed.com/programming-42/compile-error-redefinition-class-437198.html) . 
 
 ### 1b Arrays
 
