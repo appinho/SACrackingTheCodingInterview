@@ -1,11 +1,17 @@
 # SACrackingTheCodingInterviewCPPSolutions
 C++ Solutions of "Cracking The Coding Interview" questions
 
-## Chapters
+## Data structures
 
-### 1 Hastables, Arrays, and Strings
+### 1 Hastables
 
-A hash table is a data structure that maps keys to values for highly efficient lookup. Implemented with array of linked lists and a hash code function
+A hash table is a data structure that maps keys to values for highly efficient lookup.  
+Implemented as an array of linked lists (for collision handling) and a hash code function ('key % buffer_size')
 Sources:
 * [Templates](http://www.cplusplus.com/doc/oldtutorial/templates/)
 * [Unknown Array Size](https://stackoverflow.com/questions/22432755/how-to-initialize-an-array-whose-size-is-initially-unknown)
+* [Hashtable template solution](https://medium.com/@aozturk/simple-hash-map-hash-table-implementation-in-c-931965904250)
+
+### 2 Arrays
+
+### 3 Strings
