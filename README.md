@@ -9,14 +9,18 @@ C++ Solutions of "Cracking The Coding Interview" questions
   <img src="./doc/hash_table.png" width="350" title="hover text">
 </p>
 
-A hash table is a data structure that maps keys to values for highly efficient lookup.  
-Implemented as an array of linked lists (for collision handling) and a hash code function ('key % buffer_size')
+Definition: A hash table is a data structure that maps keys to values for highly efficient lookup.  
+Implementation: As an array of linked lists (for collision handling) + hash code function ('key % buffer_size') to determine position in array
+Usage: Quick access O(1)
 
 * [Template based Hashtable solution](https://medium.com/@aozturk/simple-hash-map-hash-table-implementation-in-c-931965904250)
 
 ### 1b Arrays
 
-### 1c Strings
+Implementation:
+Functionality: '[]' Operator, 'get_element_at()', 'print_array()'
+
+* [Array operator[]](https://stackoverflow.com/questions/37043078/c-overloading-array-operator)
 
 ### 2 Linked Lists
 
@@ -25,6 +29,7 @@ Implemented as an array of linked lists (for collision handling) and a hash code
 ### 3b Queues
 
 Other sources:
+* [Stack vs. Heap](https://stackoverflow.com/questions/5836309/stack-memory-vs-heap-memory)
 * [Templates](http://www.cplusplus.com/doc/oldtutorial/templates/)
 * [Unknown Array Size](https://stackoverflow.com/questions/22432755/how-to-initialize-an-array-whose-size-is-initially-unknown)
 
