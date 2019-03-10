@@ -34,7 +34,7 @@ public:
 			<< hash_key << endl;
 	}
 
-	void get(const K & key){
+	void find(const K & key){
 
 		cout << "Look for " << key;
 		int hash_key = compute_hash_key(key);
