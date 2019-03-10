@@ -33,7 +33,7 @@ Sources:
 * Used in problems:  
 
 Sources:  
-* [Unknown Array Size](https://stackoverflow.com/questions/22432755/how-to-initialize-an-array-whose-size-is-initially-unknown) . 
+* [Unknown Array Size](https://stackoverflow.com/questions/22432755/how-to-initialize-an-array-whose-size-is-initially-unknown)  
 * [Stack vs. Heap](https://stackoverflow.com/questions/5836309/stack-memory-vs-heap-memory)  
 * [Array operator[]](https://stackoverflow.com/questions/37043078/c-overloading-array-operator)  
 
