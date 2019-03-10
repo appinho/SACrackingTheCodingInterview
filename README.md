@@ -18,14 +18,29 @@ Usage: Quick access O(1) .
 
 ### 1b Arrays
 
-Implementation:  
-Functionality: `[] Operator`, `get_element_at()`, `print_array()` . 
+<p align="center">
+  <img src="./doc/array.png" width="350" title="hover text">
+</p>
+
+Definition: A data structure, here with fixed length, and contingous memory allocation
+Functionality: `[] Operator`, `size()` .  
 
 * [Unknown Array Size](https://stackoverflow.com/questions/22432755/how-to-initialize-an-array-whose-size-is-initially-unknown) . 
 * [Stack vs. Heap](https://stackoverflow.com/questions/5836309/stack-memory-vs-heap-memory) . 
 * [Array operator[]](https://stackoverflow.com/questions/37043078/c-overloading-array-operator) . 
 
 ### 2 Linked Lists
+
+<p align="center">
+  <img src="./doc/linked_list.png" width="350" title="hover text">
+</p>
+
+Definition: A linear data structure, in which the elements are not stored at contiguous memory locations, but are linked using pointers as shown in the image . 
+Functionality: `push_back()`, `size()`, `begin()`, `end()` .  
+
+* [Inheritance of templated classes](https://blog.feabhas.com/2014/06/template-inheritance/)
+* [this->](https://stackoverflow.com/questions/993352/when-should-i-make-explicit-use-of-the-this-pointer) . 
+* [Multiple forms of templated class](https://stackoverflow.com/questions/19923353/multiple-typename-arguments-in-c-template)
 
 ### 3a Stacks
 
