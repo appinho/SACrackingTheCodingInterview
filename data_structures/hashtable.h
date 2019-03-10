@@ -1,68 +1,75 @@
 // Own implemented Hast Table class
-#include <string>
-#include <vector>
-#include <list>
+
+#ifndef HASH_TABLE
+#define HASH_TABLE
+
+#include "node.h"
+#include "array.h"
+#include "linked_list.h"
+
 #include <iostream>
 
 const int N = 5;
 
 using namespace std;
 
-struct HashNode{
-	int key_;
-	string value_;
-
-	HashNode(int key, string value){
-		key_ = key;
-		value_ = value;	
-	}
-};
-
+template <typename K, typename V>
 class HashTable{
 
 public:
+
 	HashTable(){
 		buffer_size_ = N;
-		buffer_ = vector<list<HashNode>>(N,list<HashNode>());
+		buffer_ = Array<LinkedList<K,V>>(N);
 	}
-
-	HashTable(const long size){
+	HashTable(const int size){
 		buffer_size_ = size;
-		buffer_ = vector<list<HashNode>>(size,list<HashNode>());
+		buffer_ = Array<LinkedList<K,V>>(size);
 	}
 
-	void insert(const int key, const string value){
-		int hash_key = computeHashKey(key);
-		buffer_[hash_key].push_back(HashNode(key, value));
-		cout << value << " generates hash key: "
+	void insert(const K & key, const V & value){
+		int hash_key = compute_hash_key(key);
+		buffer_[hash_key].push_back(HashNode<K,V>(key, value));
+		cout << "Key " << key << " Value " << value << " HK "
 			<< hash_key << endl;
 	}
 
-	void get(const int key){
+	void get(const K & key){
 
-		int hash_key = computeHashKey(key);
+		cout << "Look for " << key;
+		int hash_key = compute_hash_key(key);
+		cout << " HK " << hash_key << " => ";
 		if(buffer_[hash_key].size() == 1){
-			cout << buffer_[hash_key].front().value_ << endl;
+			cout << buffer_[hash_key].begin()->value_ << endl;
 			return;
 		}
 		else{
-			for(list<HashNode>::iterator it = buffer_[hash_key].begin();
-				it != buffer_[hash_key].end(); ++it){
-				if((*it).key_ == key){
-					cout << (*it).value_ << endl;
+			HashNode<K,V> * current = buffer_[hash_key].begin();
+			while(current->next_ != nullptr){
+				if(current->key_ == key){
+					cout << current->value_ << endl;
 					return;
 				}
+				current = current->next_;
+			}
+			if(current->key_ == key){
+					cout << current->value_ << endl;
+					return;
 			}
 		}
 		cout << "No entry found" << endl;
 	}
 
+
 private:
 
-	int computeHashKey(const int hash_code){
-		return hash_code % buffer_size_;
+	int compute_hash_key(const K & key){
+		return int(key) % buffer_size_;
 	}
 
+
 	int buffer_size_;
-	vector<list<HashNode>> buffer_;
+	Array<LinkedList<K,V>> buffer_;
 };
+
+#endif
