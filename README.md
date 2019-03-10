@@ -56,8 +56,12 @@ Sources:
 
 ### 3a Stacks
 
+<p align="center">
+  <img src="./doc/stack.png" width="350" title="hover text">
+</p>
+
 ### 3b Queues
 
-Other sources:
-
-## Algorithm
+<p align="center">
+  <img src="./doc/queue.png" width="350" title="hover text">
+</p>
