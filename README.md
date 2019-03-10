@@ -35,7 +35,7 @@ Functionality: `[] Operator`, `size()` .
   <img src="./doc/linked_list.png" width="350" title="hover text">
 </p>
 
-Definition: A linear data structure, in which the elements are not stored at contiguous memory locations, but are linked using pointers as shown in the image . 
+Definition: A linear data structure, in which the elements are not stored at contiguous memory locations, but are linked using pointers as shown in the image. Available as Single Linked List that only stores the next node and Double Linked List that stores the previous node too . 
 Functionality: `push_back()`, `size()`, `begin()`, `end()` .  
 
 * [Inheritance of templated classes](https://blog.feabhas.com/2014/06/template-inheritance/)
