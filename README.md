@@ -1,5 +1,5 @@
-# SACrackingTheCodingInterviewCPPSolutions
-C++ Solutions of "Cracking The Coding Interview" questions
+# SACrackingTheCodingInterview
+C++ solutions of most common data structures, algorithms and "Cracking The Coding Interview" questions
 
 ## [Data structures](https://github.com/appinho/SACrackingTheCodingInterview/tree/master/data_structures)
 
