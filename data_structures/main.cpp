@@ -25,9 +25,9 @@ int main(){
 	ht.insert(422, "aa");
 	ht.insert(224, "qs");
 	ht.insert(323, "p1");
-	ht.get(123);
-	ht.get(422);
-	ht.get(323);
-	ht.get(21);
+	ht.find(123);
+	ht.find(422);
+	ht.find(323);
+	ht.find(21);
 
 }
